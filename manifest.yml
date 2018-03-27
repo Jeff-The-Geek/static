@@ -1,3 +1,15 @@
+properties:
+  router:
+    tls_pem:
+    - cert_chain: |
+        -----BEGIN CERTIFICATE-----
+        SSL_CERTIFICATE_SIGNED_BY_PRIVATE_KEY
+        -----END CERTIFICATE-----
+      private_key: |
+        -----BEGIN EXAMPLE RSA PRIVATE KEY-----
+        RSA_PRIVATE_KEY
+        -----END EXAMPLE RSA PRIVATE KEY-----
+    enable_ssl: true
 applications:
 - name: static-site
   instances: 2
