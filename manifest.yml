@@ -1,5 +1,6 @@
 applications:
 - name: static-site
+  instances: 2
   memory: 64m
   disk_quota: 64m
   random-route: true
